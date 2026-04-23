@@ -29,7 +29,9 @@ The application supports user settings through Garmin Connect IQ's Settings Page
 ### Available Settings
 
 - Week Start Day: `Sunday / Monday / Saturday` (default: `Sunday`)
+- Date Format: `ISO / European / US` (default: `ISO`)
 - Date Separator: `Slash / Dash / Dot / Space` (default: `Slash`)
+- Date Color: `White / Red / Blue / Green / Yellow / Orange / Purple / Pink / Dark Blue / Light Gray` (default: `White`)
 
 ## Related document
 
