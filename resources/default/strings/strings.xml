@@ -1,0 +1,13 @@
+<strings>
+    <string id="AppName">Calendar</string>
+    <string id="Title">Calendar</string>
+    <string id="WeekStartDayTitle">Week Start Day</string>
+    <string id="WeekStartSunday">Sunday</string>
+    <string id="WeekStartMonday">Monday</string>
+    <string id="WeekStartSaturday">Saturday</string>
+    <string id="DateSeparatorTitle">Date Separator</string>
+    <string id="DateSeparatorSlash">Slash ( / )</string>
+    <string id="DateSeparatorDash">Dash ( - )</string>
+    <string id="DateSeparatorDot">Dot ( . )</string>
+    <string id="DateSeparatorSpace">Space (   )</string>
+</strings>

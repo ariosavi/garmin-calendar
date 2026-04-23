@@ -1,0 +1,4 @@
+<properties>
+    <property id="weekStartDay" type="number">0</property>
+    <property id="dateSeparator" type="number">0</property>
+</properties>

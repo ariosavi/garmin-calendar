@@ -1,0 +1,17 @@
+<settings>
+    <setting propertyKey="@Properties.weekStartDay" title="@Strings.WeekStartDayTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.WeekStartSunday</listEntry>
+            <listEntry value="1">@Strings.WeekStartMonday</listEntry>
+            <listEntry value="2">@Strings.WeekStartSaturday</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.dateSeparator" title="@Strings.DateSeparatorTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.DateSeparatorSlash</listEntry>
+            <listEntry value="1">@Strings.DateSeparatorDash</listEntry>
+            <listEntry value="2">@Strings.DateSeparatorDot</listEntry>
+            <listEntry value="3">@Strings.DateSeparatorSpace</listEntry>
+        </settingConfig>
+    </setting>
+</settings>
