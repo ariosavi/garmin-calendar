@@ -20,7 +20,7 @@ class CalendarGlanceView extends WatchUi.GlanceView {
     if (gregorianText != null) {
       var startY = (dc.getHeight() - mediumTextHeight) / 2;
 
-      dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+      dc.setColor((new CalendarApp()).getDateColor(), Graphics.COLOR_TRANSPARENT);
       dc.drawText(
           0,
           startY,

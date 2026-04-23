@@ -1,5 +1,6 @@
 import Toybox.Application;
 import Toybox.Application.Properties;
+import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.Time;
@@ -89,6 +90,44 @@ class CalendarApp extends Application.AppBase {
     }
     // Default to slash.
     return "/";
+  }
+
+  // Returns the user-selected date color.
+  // 0 => COLOR_WHITE, 1 => COLOR_RED, 2 => COLOR_BLUE,
+  // 3 => COLOR_GREEN, 4 => COLOR_YELLOW, 5 => COLOR_ORANGE,
+  // 6 => COLOR_PURPLE, 7 => COLOR_PINK, 8 => COLOR_CYAN,
+  // 9 => COLOR_LT_GRAY
+  function getDateColor() as Number {
+    var colorMode = Properties.getValue("dateColor");
+    if (colorMode == 1 || colorMode == "1" || colorMode == 1.0) {
+      return Graphics.COLOR_RED;
+    }
+    if (colorMode == 2 || colorMode == "2" || colorMode == 2.0) {
+      return Graphics.COLOR_BLUE;
+    }
+    if (colorMode == 3 || colorMode == "3" || colorMode == 3.0) {
+      return Graphics.COLOR_GREEN;
+    }
+    if (colorMode == 4 || colorMode == "4" || colorMode == 4.0) {
+      return Graphics.COLOR_YELLOW;
+    }
+    if (colorMode == 5 || colorMode == "5" || colorMode == 5.0) {
+      return Graphics.COLOR_ORANGE;
+    }
+    if (colorMode == 6 || colorMode == "6" || colorMode == 6.0) {
+      return Graphics.COLOR_PURPLE;
+    }
+    if (colorMode == 7 || colorMode == "7" || colorMode == 7.0) {
+      return Graphics.COLOR_PINK;
+    }
+    if (colorMode == 8 || colorMode == "8" || colorMode == 8.0) {
+      return Graphics.COLOR_DK_BLUE;
+    }
+    if (colorMode == 9 || colorMode == "9" || colorMode == 9.0) {
+      return Graphics.COLOR_LT_GRAY;
+    }
+    // Default to white.
+    return Graphics.COLOR_WHITE;
   }
 }
 

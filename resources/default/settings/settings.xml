@@ -21,4 +21,18 @@
             <listEntry value="3">@Strings.DateSeparatorSpace</listEntry>
         </settingConfig>
     </setting>
+    <setting propertyKey="@Properties.dateColor" title="@Strings.DateColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.ColorWhite</listEntry>
+            <listEntry value="1">@Strings.ColorRed</listEntry>
+            <listEntry value="2">@Strings.ColorBlue</listEntry>
+            <listEntry value="3">@Strings.ColorGreen</listEntry>
+            <listEntry value="4">@Strings.ColorYellow</listEntry>
+            <listEntry value="5">@Strings.ColorOrange</listEntry>
+            <listEntry value="6">@Strings.ColorPurple</listEntry>
+            <listEntry value="7">@Strings.ColorPink</listEntry>
+            <listEntry value="8">@Strings.ColorDkBlue</listEntry>
+            <listEntry value="9">@Strings.ColorLtGray</listEntry>
+        </settingConfig>
+    </setting>
 </settings>
