@@ -11,7 +11,7 @@ class CalendarGlanceView extends WatchUi.GlanceView {
   }
 
   function onLayout(dc as Graphics.Dc) as Void {
-    gregorianText = (new CalendarApp()).getGregorianDateStr();
+    gregorianText = getApp().getGregorianDateStr();
   }
 
   function onUpdate(dc as Graphics.Dc) as Void {
@@ -25,7 +25,7 @@ class CalendarGlanceView extends WatchUi.GlanceView {
           0,
           startY,
           Graphics.FONT_MEDIUM,
-          (new CalendarApp()).getGregorianDateStr(),
+          getApp().getGregorianDateStr(),
           Graphics.TEXT_JUSTIFY_LEFT
       );
     }
