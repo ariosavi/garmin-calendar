@@ -125,7 +125,6 @@ class CalendarView extends Ui.View {
         }
 
         // Draw weekday header
-        var weekDaysBase = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
         var weekDayLabelsSun = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
         var weekDayLabelsMon = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
         var weekDayLabelsSat = ['S', 'S', 'M', 'T', 'W', 'T', 'F'];

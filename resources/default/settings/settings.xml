@@ -24,7 +24,7 @@
             <listEntry value="5">@Strings.ColorOrange</listEntry>
             <listEntry value="6">@Strings.ColorPurple</listEntry>
             <listEntry value="7">@Strings.ColorPink</listEntry>
-            <listEntry value="8">@Strings.ColorCyan</listEntry>
+            <listEntry value="8">@Strings.ColorDkBlue</listEntry>
             <listEntry value="9">@Strings.ColorLtGray</listEntry>
         </settingConfig>
     </setting>

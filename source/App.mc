@@ -94,7 +94,7 @@ class CalendarApp extends Application.AppBase {
       return Graphics.COLOR_PINK;
     }
     if (colorMode == 8 || colorMode == "8" || colorMode == 8.0) {
-      return Graphics.COLOR_CYAN;
+      return Graphics.COLOR_DK_BLUE;
     }
     if (colorMode == 9 || colorMode == "9" || colorMode == 9.0) {
       return Graphics.COLOR_LT_GRAY;
