@@ -10,4 +10,15 @@
     <string id="DateSeparatorDash">Dash ( - )</string>
     <string id="DateSeparatorDot">Dot ( . )</string>
     <string id="DateSeparatorSpace">Space (   )</string>
+    <string id="DateColorTitle">Date Color</string>
+    <string id="ColorWhite">White</string>
+    <string id="ColorRed">Red</string>
+    <string id="ColorBlue">Blue</string>
+    <string id="ColorGreen">Green</string>
+    <string id="ColorYellow">Yellow</string>
+    <string id="ColorOrange">Orange</string>
+    <string id="ColorPurple">Purple</string>
+    <string id="ColorPink">Pink</string>
+    <string id="ColorCyan">Cyan</string>
+    <string id="ColorLtGray">Light Gray</string>
 </strings>

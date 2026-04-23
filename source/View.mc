@@ -58,16 +58,18 @@ class CalendarView extends Ui.View {
         var headerY = 8;
         var headerX = Math.round(dc.getWidth() / 2).toNumber();
 
+        var dateColor = (new CalendarApp()).getDateColor();
+
         // Draw the month and year as a header at the top of the screen
         if (currentMonthView != currentMonth || currentYearView != currentYear) {
             var gregorianMonthNames = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
             var headerText = gregorianMonthNames[currentMonthView - 1] + " " + currentYearView.toString();
-            dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+            dc.setColor(dateColor, Gfx.COLOR_TRANSPARENT);
             dc.drawText(headerX, headerY, font, headerText, Gfx.TEXT_JUSTIFY_CENTER);
         } else {
             // Draw the date string as a header at the top of the screen
             var dateStr = (new CalendarApp()).getGregorianDateStr();
-            dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+            dc.setColor(dateColor, Gfx.COLOR_TRANSPARENT);
             dc.drawText(headerX, headerY, font, dateStr, Gfx.TEXT_JUSTIFY_CENTER);
         }
 
