@@ -34,17 +34,44 @@ class CalendarApp extends Application.AppBase {
     return [new CalendarGlanceView()];
   }
 
-  // Returns the current Gregorian date as a string in "year<sep>mm<sep>dd" format.
+  // Returns the current Gregorian date as a string based on the selected format and separator.
   function getGregorianDateStr() {
     var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
     var monthStr =
       today.month < 10 ? "0" + today.month.toString() : today.month.toString();
     var dayStr =
       today.day < 10 ? "0" + today.day.toString() : today.day.toString();
+    var yearStr = today.year.toString();
 
     var sep = getDateSeparator();
-    var gregorianStr = today.year.toString() + sep + monthStr + sep + dayStr;
-    return gregorianStr;
+    var format = getDateFormat();
+
+    var dateStr;
+    if (format == 1) {
+      // European: dd/mm/yyyy
+      dateStr = dayStr + sep + monthStr + sep + yearStr;
+    } else if (format == 2) {
+      // US: mm/dd/yyyy
+      dateStr = monthStr + sep + dayStr + sep + yearStr;
+    } else {
+      // ISO (default): yyyy/mm/dd
+      dateStr = yearStr + sep + monthStr + sep + dayStr;
+    }
+    return dateStr;
+  }
+
+  // Returns the user-selected date format.
+  // 0 => ISO (yyyy/mm/dd), 1 => European (dd/mm/yyyy), 2 => US (mm/dd/yyyy)
+  function getDateFormat() as Number {
+    var fmt = Properties.getValue("dateFormat");
+    if (fmt == 1 || fmt == "1" || fmt == 1.0) {
+      return 1;
+    }
+    if (fmt == 2 || fmt == "2" || fmt == 2.0) {
+      return 2;
+    }
+    // Default to ISO.
+    return 0;
   }
 
   // Returns the user-selected date separator character.

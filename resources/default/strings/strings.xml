@@ -5,6 +5,10 @@
     <string id="WeekStartSunday">Sunday</string>
     <string id="WeekStartMonday">Monday</string>
     <string id="WeekStartSaturday">Saturday</string>
+    <string id="DateFormatTitle">Date Format</string>
+    <string id="DateFormatISO">ISO (yyyy/mm/dd)</string>
+    <string id="DateFormatEuropean">European (dd/mm/yyyy)</string>
+    <string id="DateFormatUS">US (mm/dd/yyyy)</string>
     <string id="DateSeparatorTitle">Date Separator</string>
     <string id="DateSeparatorSlash">Slash ( / )</string>
     <string id="DateSeparatorDash">Dash ( - )</string>
