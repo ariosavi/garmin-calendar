@@ -66,7 +66,7 @@ class CalendarView extends Ui.View {
             dc.drawText(headerX, headerY, font, headerText, Gfx.TEXT_JUSTIFY_CENTER);
         } else {
             // Draw the date string as a header at the top of the screen
-            var dateStr = getApp().getGregorianDateStr();
+            var dateStr = (new CalendarApp()).getGregorianDateStr();
             dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
             dc.drawText(headerX, headerY, font, dateStr, Gfx.TEXT_JUSTIFY_CENTER);
         }
