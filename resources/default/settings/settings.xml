@@ -6,6 +6,13 @@
             <listEntry value="2">@Strings.WeekStartSaturday</listEntry>
         </settingConfig>
     </setting>
+    <setting propertyKey="@Properties.dateFormat" title="@Strings.DateFormatTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.DateFormatISO</listEntry>
+            <listEntry value="1">@Strings.DateFormatEuropean</listEntry>
+            <listEntry value="2">@Strings.DateFormatUS</listEntry>
+        </settingConfig>
+    </setting>
     <setting propertyKey="@Properties.dateSeparator" title="@Strings.DateSeparatorTitle">
         <settingConfig type="list">
             <listEntry value="0">@Strings.DateSeparatorSlash</listEntry>
