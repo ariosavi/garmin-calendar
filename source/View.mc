@@ -17,7 +17,7 @@ class CalendarView extends Ui.View {
     // Currently displayed month and year in the calendar
     var currentMonthView = 1;
     var currentYearView = 2024;
-    var weekStartShift = 0; // Default Sunday
+    var weekStartShift = 1; // Default Monday
 
     // Initialization method (called once)
     function initialize() {
@@ -220,8 +220,8 @@ class CalendarView extends Ui.View {
         } else if (weekStartDay == 2 || weekStartDay == "2" || weekStartDay == 2.0 || weekStartDay == "Saturday") {
             weekStartShift = 2;
         } else {
-            // Default to Sunday for invalid, unset, or legacy values.
-            weekStartShift = 0;
+            // Default to Monday for invalid, unset, or legacy values.
+            weekStartShift = 1;
         }
     }
 }
