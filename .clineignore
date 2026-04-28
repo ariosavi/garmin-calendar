@@ -1,0 +1,44 @@
+# Build artifacts
+bin/
+build/
+out/
+dist/
+
+# IDE and Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.env
+.env.local
+
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Version control
+.git/
+.gitignore
+
+# Generated files
+*.pyc
+__pycache__/
+
+# Package manager
+package-lock.json
+yarn.lock
+
+# Generated icon files (keep only the source)
+resources/*/drawables/launcher_icon.png
+resources/*/drawables/launcher_icon_512.png
+resources/create_drawables.sh
+
+# Screenshots (optional - keeping them)
+# screenshots/
+
+# OS files
+Thumbs.db
+.DS_Store
